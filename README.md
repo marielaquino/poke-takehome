@@ -14,8 +14,8 @@ There are three endpoints:
 
 ### Quick Start
 
-1. git clone git@github.com:marielaquino/pythonProject.git
-2. cd pythonProject/
+1. git clone git@github.com:marielaquino/poke-takehome.git
+2. cd poke-takehome/
 3. docker build -t pokeapi-wrapper .
 4. docker run -p 14420:5000 pokeapi-wrapper
 
