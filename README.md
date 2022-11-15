@@ -30,3 +30,4 @@ Port 14420 can be changed to any port if currently in use.
 5. curl -v http://127.0.0.1:5000/v1/favorites?includeHappiness={anyvalue} : displays favorite pokemon data with base happiness aggregated data 
 
 ### Thanks for your time! 🙏 
+
