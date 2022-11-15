@@ -23,11 +23,11 @@ Port 14420 can be changed to any port if currently in use.
 
 ### Accessing endpoints from CLI 
 
-1. curl -v http://127.0.0.1:5000/ : displays hello world text 
-2. curl -v http://127.0.0.1:5000/v1/health : displays health endpoint text
-3. curl -v http://127.0.0.1:5000/v1/health?forceServerError={anyvalue} : displays error message 
-4. curl -v http://127.0.0.1:5000/v1/favorites : displays favorite pokemon data
-5. curl -v http://127.0.0.1:5000/v1/favorites?includeHappiness={anyvalue} : displays favorite pokemon data with base happiness aggregated data 
+1. curl http://127.0.0.1:14420/ : displays hello world text 
+2. curl http://127.0.0.1:14420/v1/health : displays health endpoint text
+3. curl http://127.0.0.1:14420/v1/health?forceServerError={anyvalue} : displays error message 
+4. curl http://127.0.0.1:14420/v1/favorites : displays favorite pokemon data
+5. curl http://127.0.0.1:14420/v1/favorites?includeHappiness={anyvalue} : displays favorite pokemon data with base happiness aggregated data 
 
 ### Thanks for your time! 🙏 
 
