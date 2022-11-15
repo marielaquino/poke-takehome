@@ -16,7 +16,6 @@ base_url = "https://pokeapi.co/api/v2/pokemon/"
 def hello_world():
     """
         Hello world function that displays a simple pokemon-related text.
-
     """
     return 'Hello World, Charmander is 50lbs'
 
@@ -25,7 +24,6 @@ def hello_world():
 def health():
     """
         A health endpoint as confidence check for API access.
-
     """
 
     try:
@@ -48,11 +46,9 @@ def health():
 @app.route('/v1/favorites')
 def pokemon_data():
     """
-
         An endpoint that displays formatted Pokemon data on name, height, weight,
         base happiness, color, and 2 random moves. Extends to include aggregated
         base_happiness data if any value is passed into query parameter "includeHappiness".
-
     """
 
     try:
@@ -74,8 +70,8 @@ def pokemon_data():
 
 def pokemon_favorites() -> dict:
     """
-        Returns formatted name, height, weight, 2 random moves, color, and base happiness of my top 5 favorite pokemon.
-
+        Returns formatted name, height, weight, 2 random moves, color, and
+        base happiness of my top 5 favorite pokemon.
     """
 
     favorites = []
@@ -91,9 +87,8 @@ def pokemon_favorites() -> dict:
 
 def happy_stats() -> dict:
     """
-
-        Returns the arithmetic mean (average), geometric mean, and median base happiness for my top 5 favorite pokemon.
-
+        Returns the arithmetic mean (average), geometric mean, and median
+        base happiness for my top 5 favorite pokemon.
     """
     total_base_happiness = []
 
@@ -122,9 +117,7 @@ def happy_stats() -> dict:
 
 def pokemon_return(mon: str) -> dict:
     """
-
         A helper method for pokemon_favorites() method.
-
     """
     url = base_url + mon
     response = requests.get(url=url)
